@@ -1,0 +1,1804 @@
+{
+  "transactions": [
+    {
+      "transaction_id": "txn_0199",
+      "timestamp": "2026-02-28T18:09:50.078606",
+      "amount": 4165.92,
+      "payment_method": "Wallet",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0195",
+      "timestamp": "2026-03-03T18:09:50.078571",
+      "amount": 1138.27,
+      "payment_method": "Cash",
+      "customer_name": "Ravi",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0155",
+      "timestamp": "2026-03-03T18:09:50.078130",
+      "amount": 2304.01,
+      "payment_method": "UPI",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0119",
+      "timestamp": "2026-02-27T18:09:50.077846",
+      "amount": 4419.32,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0152",
+      "timestamp": "2026-02-18T18:09:50.078072",
+      "amount": 3747.95,
+      "payment_method": "Wallet",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0133",
+      "timestamp": "2026-03-05T18:09:50.077947",
+      "amount": 4775.98,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0001",
+      "timestamp": "2026-03-01T18:09:50.076018",
+      "amount": 1207.65,
+      "payment_method": "Cash",
+      "customer_name": "Ravi",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0038",
+      "timestamp": "2026-02-27T18:09:50.076675",
+      "amount": 2777.72,
+      "payment_method": "Wallet",
+      "customer_name": "Kiran",
+      "is_khata": true,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0080",
+      "timestamp": "2026-02-17T18:09:50.077612",
+      "amount": 2690.45,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0172",
+      "timestamp": "2026-03-14T18:09:50.078263",
+      "amount": 4241.98,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0085",
+      "timestamp": "2026-03-16T18:09:50.077645",
+      "amount": 3740.55,
+      "payment_method": "Cash",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0027",
+      "timestamp": "2026-03-12T18:09:50.076578",
+      "amount": 3066.45,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0187",
+      "timestamp": "2026-02-24T18:09:50.078494",
+      "amount": 1664.5,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0087",
+      "timestamp": "2026-03-09T18:09:50.077656",
+      "amount": 2556.2,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0137",
+      "timestamp": "2026-03-09T18:09:50.077969",
+      "amount": 4026.71,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0127",
+      "timestamp": "2026-03-15T18:09:50.077909",
+      "amount": 3230.26,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0141",
+      "timestamp": "2026-02-21T18:09:50.077992",
+      "amount": 3770.1,
+      "payment_method": "Cash",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0171",
+      "timestamp": "2026-02-25T18:09:50.078257",
+      "amount": 951.48,
+      "payment_method": "Cash",
+      "customer_name": "Kiran",
+      "is_khata": true,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0015",
+      "timestamp": "2026-03-14T18:09:50.076487",
+      "amount": 1168.6,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0184",
+      "timestamp": "2026-03-10T18:09:50.078459",
+      "amount": 2729.26,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0061",
+      "timestamp": "2026-02-16T18:09:50.077459",
+      "amount": 4762.64,
+      "payment_method": "Wallet",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0116",
+      "timestamp": "2026-03-08T18:09:50.077831",
+      "amount": 214.72,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0011",
+      "timestamp": "2026-03-01T18:09:50.076450",
+      "amount": 1917.14,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0082",
+      "timestamp": "2026-02-17T18:09:50.077624",
+      "amount": 671.44,
+      "payment_method": "Wallet",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0200",
+      "timestamp": "2026-02-16T18:09:50.078614",
+      "amount": 3349.21,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0117",
+      "timestamp": "2026-03-12T18:09:50.077836",
+      "amount": 4958.61,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0194",
+      "timestamp": "2026-02-16T18:09:50.078559",
+      "amount": 3128.46,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0158",
+      "timestamp": "2026-02-21T18:09:50.078161",
+      "amount": 1344.89,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0026",
+      "timestamp": "2026-03-16T18:09:50.076570",
+      "amount": 1243.15,
+      "payment_method": "Wallet",
+      "customer_name": "Ravi",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0036",
+      "timestamp": "2026-02-28T18:09:50.076658",
+      "amount": 3093.33,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0054",
+      "timestamp": "2026-03-16T18:09:50.076837",
+      "amount": 3115.47,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0124",
+      "timestamp": "2026-03-06T18:09:50.077873",
+      "amount": 4881.02,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0110",
+      "timestamp": "2026-03-02T18:09:50.077794",
+      "amount": 4187.4,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0142",
+      "timestamp": "2026-03-13T18:09:50.077999",
+      "amount": 847.49,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0049",
+      "timestamp": "2026-02-27T18:09:50.076794",
+      "amount": 4254.8,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0196",
+      "timestamp": "2026-02-26T18:09:50.078579",
+      "amount": 3701.63,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0024",
+      "timestamp": "2026-03-15T18:09:50.076556",
+      "amount": 4779.66,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0178",
+      "timestamp": "2026-02-19T18:09:50.078397",
+      "amount": 4884.26,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0120",
+      "timestamp": "2026-02-19T18:09:50.077852",
+      "amount": 4633.64,
+      "payment_method": "UPI",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0072",
+      "timestamp": "2026-02-20T18:09:50.077561",
+      "amount": 4936.01,
+      "payment_method": "Cash",
+      "customer_name": "Sneha",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0092",
+      "timestamp": "2026-03-15T18:09:50.077686",
+      "amount": 1010.24,
+      "payment_method": "UPI",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0113",
+      "timestamp": "2026-03-15T18:09:50.077815",
+      "amount": 3070.23,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0066",
+      "timestamp": "2026-02-20T18:09:50.077492",
+      "amount": 2542.03,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0102",
+      "timestamp": "2026-02-25T18:09:50.077744",
+      "amount": 4201.12,
+      "payment_method": "Cash",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0083",
+      "timestamp": "2026-02-22T18:09:50.077631",
+      "amount": 4916.66,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0050",
+      "timestamp": "2026-02-21T18:09:50.076801",
+      "amount": 221.89,
+      "payment_method": "Cash",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0181",
+      "timestamp": "2026-03-05T18:09:50.078432",
+      "amount": 677.64,
+      "payment_method": "Wallet",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0139",
+      "timestamp": "2026-03-11T18:09:50.077981",
+      "amount": 3489.63,
+      "payment_method": "Cash",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0106",
+      "timestamp": "2026-02-23T18:09:50.077768",
+      "amount": 1852.89,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0143",
+      "timestamp": "2026-02-18T18:09:50.078004",
+      "amount": 4156.54,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0136",
+      "timestamp": "2026-02-24T18:09:50.077964",
+      "amount": 3534.74,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0123",
+      "timestamp": "2026-03-01T18:09:50.077868",
+      "amount": 4568.6,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0186",
+      "timestamp": "2026-02-22T18:09:50.078475",
+      "amount": 3387.31,
+      "payment_method": "Wallet",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0164",
+      "timestamp": "2026-03-01T18:09:50.078208",
+      "amount": 2155.38,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0064",
+      "timestamp": "2026-02-21T18:09:50.077479",
+      "amount": 3253.04,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0089",
+      "timestamp": "2026-02-18T18:09:50.077666",
+      "amount": 479.6,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0121",
+      "timestamp": "2026-02-27T18:09:50.077858",
+      "amount": 1435.93,
+      "payment_method": "UPI",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0149",
+      "timestamp": "2026-03-15T18:09:50.078049",
+      "amount": 4599.76,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0004",
+      "timestamp": "2026-02-18T18:09:50.076390",
+      "amount": 3040.09,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0048",
+      "timestamp": "2026-02-21T18:09:50.076786",
+      "amount": 4843.08,
+      "payment_method": "Cash",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0144",
+      "timestamp": "2026-02-20T18:09:50.078009",
+      "amount": 4146.23,
+      "payment_method": "Wallet",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0180",
+      "timestamp": "2026-02-25T18:09:50.078421",
+      "amount": 1627.22,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0056",
+      "timestamp": "2026-02-26T18:09:50.077390",
+      "amount": 2111.39,
+      "payment_method": "Cash",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0060",
+      "timestamp": "2026-02-22T18:09:50.077453",
+      "amount": 609.09,
+      "payment_method": "Wallet",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0019",
+      "timestamp": "2026-03-01T18:09:50.076516",
+      "amount": 2556.04,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0147",
+      "timestamp": "2026-03-18T18:09:50.078026",
+      "amount": 2825.17,
+      "payment_method": "Cash",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0185",
+      "timestamp": "2026-02-28T18:09:50.078467",
+      "amount": 1057.52,
+      "payment_method": "UPI",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0103",
+      "timestamp": "2026-02-17T18:09:50.077750",
+      "amount": 297.81,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0146",
+      "timestamp": "2026-02-25T18:09:50.078020",
+      "amount": 1463.15,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0023",
+      "timestamp": "2026-02-27T18:09:50.076548",
+      "amount": 896.52,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0099",
+      "timestamp": "2026-03-03T18:09:50.077727",
+      "amount": 1492.7,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0190",
+      "timestamp": "2026-02-17T18:09:50.078528",
+      "amount": 3301.5,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0162",
+      "timestamp": "2026-02-23T18:09:50.078191",
+      "amount": 2552.32,
+      "payment_method": "Wallet",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0033",
+      "timestamp": "2026-03-12T18:09:50.076632",
+      "amount": 4404.76,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0045",
+      "timestamp": "2026-03-04T18:09:50.076763",
+      "amount": 4247.47,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0163",
+      "timestamp": "2026-03-05T18:09:50.078201",
+      "amount": 4461.26,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0174",
+      "timestamp": "2026-02-24T18:09:50.078277",
+      "amount": 2697.83,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0130",
+      "timestamp": "2026-03-17T18:09:50.077931",
+      "amount": 4369.61,
+      "payment_method": "UPI",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0076",
+      "timestamp": "2026-03-01T18:09:50.077584",
+      "amount": 535.09,
+      "payment_method": "Cash",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0006",
+      "timestamp": "2026-02-19T18:09:50.076410",
+      "amount": 1294.48,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0140",
+      "timestamp": "2026-02-26T18:09:50.077986",
+      "amount": 110.88,
+      "payment_method": "UPI",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0188",
+      "timestamp": "2026-02-26T18:09:50.078508",
+      "amount": 1391.83,
+      "payment_method": "Wallet",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0058",
+      "timestamp": "2026-02-27T18:09:50.077408",
+      "amount": 3068.19,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0168",
+      "timestamp": "2026-03-08T18:09:50.078237",
+      "amount": 2444.68,
+      "payment_method": "Cash",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0177",
+      "timestamp": "2026-03-07T18:09:50.078346",
+      "amount": 486.63,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0022",
+      "timestamp": "2026-03-07T18:09:50.076542",
+      "amount": 2568.12,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0098",
+      "timestamp": "2026-03-06T18:09:50.077722",
+      "amount": 373.28,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0182",
+      "timestamp": "2026-03-11T18:09:50.078442",
+      "amount": 2039.1,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0051",
+      "timestamp": "2026-03-02T18:09:50.076813",
+      "amount": 3232.93,
+      "payment_method": "UPI",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0148",
+      "timestamp": "2026-03-08T18:09:50.078038",
+      "amount": 1863.44,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0055",
+      "timestamp": "2026-03-08T18:09:50.077355",
+      "amount": 1283.88,
+      "payment_method": "UPI",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0159",
+      "timestamp": "2026-03-16T18:09:50.078169",
+      "amount": 3066.64,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0176",
+      "timestamp": "2026-02-22T18:09:50.078289",
+      "amount": 2506.2,
+      "payment_method": "Wallet",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0020",
+      "timestamp": "2026-03-18T18:09:50.076527",
+      "amount": 4755.81,
+      "payment_method": "Wallet",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0010",
+      "timestamp": "2026-02-27T18:09:50.076442",
+      "amount": 4423.27,
+      "payment_method": "Cash",
+      "customer_name": "Suresh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0074",
+      "timestamp": "2026-03-10T18:09:50.077574",
+      "amount": 980.57,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0151",
+      "timestamp": "2026-03-09T18:09:50.078065",
+      "amount": 1008.7,
+      "payment_method": "UPI",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0108",
+      "timestamp": "2026-03-13T18:09:50.077780",
+      "amount": 990.49,
+      "payment_method": "Wallet",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0107",
+      "timestamp": "2026-03-07T18:09:50.077774",
+      "amount": 4096.84,
+      "payment_method": "UPI",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0062",
+      "timestamp": "2026-03-13T18:09:50.077469",
+      "amount": 3334.78,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0078",
+      "timestamp": "2026-02-18T18:09:50.077601",
+      "amount": 2675.2,
+      "payment_method": "Wallet",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0052",
+      "timestamp": "2026-02-27T18:09:50.076821",
+      "amount": 907.39,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0034",
+      "timestamp": "2026-03-05T18:09:50.076643",
+      "amount": 1310.69,
+      "payment_method": "UPI",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0013",
+      "timestamp": "2026-03-15T18:09:50.076472",
+      "amount": 2324.09,
+      "payment_method": "Wallet",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0118",
+      "timestamp": "2026-03-14T18:09:50.077841",
+      "amount": 4182.67,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0030",
+      "timestamp": "2026-03-12T18:09:50.076603",
+      "amount": 2941.43,
+      "payment_method": "Cash",
+      "customer_name": "Sneha",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0153",
+      "timestamp": "2026-03-15T18:09:50.078114",
+      "amount": 4177.26,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0047",
+      "timestamp": "2026-03-02T18:09:50.076778",
+      "amount": 2380.91,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0122",
+      "timestamp": "2026-03-12T18:09:50.077863",
+      "amount": 2500.95,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0111",
+      "timestamp": "2026-02-17T18:09:50.077805",
+      "amount": 4406.94,
+      "payment_method": "Wallet",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0112",
+      "timestamp": "2026-02-17T18:09:50.077810",
+      "amount": 1612.21,
+      "payment_method": "Cash",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0063",
+      "timestamp": "2026-03-16T18:09:50.077474",
+      "amount": 3924.95,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0039",
+      "timestamp": "2026-03-11T18:09:50.076683",
+      "amount": 4716.82,
+      "payment_method": "Wallet",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0161",
+      "timestamp": "2026-03-03T18:09:50.078182",
+      "amount": 4863.97,
+      "payment_method": "Wallet",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0029",
+      "timestamp": "2026-03-13T18:09:50.076592",
+      "amount": 4138.2,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0131",
+      "timestamp": "2026-02-20T18:09:50.077937",
+      "amount": 4995.96,
+      "payment_method": "UPI",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0192",
+      "timestamp": "2026-03-11T18:09:50.078544",
+      "amount": 2410.65,
+      "payment_method": "Cash",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0091",
+      "timestamp": "2026-03-08T18:09:50.077680",
+      "amount": 1572.46,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0028",
+      "timestamp": "2026-02-23T18:09:50.076585",
+      "amount": 1780.82,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0067",
+      "timestamp": "2026-03-09T18:09:50.077497",
+      "amount": 4581.83,
+      "payment_method": "Cash",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0093",
+      "timestamp": "2026-03-15T18:09:50.077692",
+      "amount": 4007.71,
+      "payment_method": "Cash",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0198",
+      "timestamp": "2026-02-27T18:09:50.078597",
+      "amount": 3332.57,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0145",
+      "timestamp": "2026-03-04T18:09:50.078014",
+      "amount": 291.41,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0044",
+      "timestamp": "2026-03-16T18:09:50.076755",
+      "amount": 1595.46,
+      "payment_method": "Cash",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0043",
+      "timestamp": "2026-03-10T18:09:50.076748",
+      "amount": 2288.67,
+      "payment_method": "UPI",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0175",
+      "timestamp": "2026-03-04T18:09:50.078283",
+      "amount": 544.18,
+      "payment_method": "UPI",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0009",
+      "timestamp": "2026-02-27T18:09:50.076434",
+      "amount": 3330.49,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0109",
+      "timestamp": "2026-03-18T18:09:50.077786",
+      "amount": 4205.18,
+      "payment_method": "Cash",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0170",
+      "timestamp": "2026-03-10T18:09:50.078249",
+      "amount": 778.66,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0189",
+      "timestamp": "2026-02-18T18:09:50.078517",
+      "amount": 3729.34,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0025",
+      "timestamp": "2026-03-09T18:09:50.076563",
+      "amount": 4334.84,
+      "payment_method": "Wallet",
+      "customer_name": "Ravi",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0166",
+      "timestamp": "2026-03-17T18:09:50.078218",
+      "amount": 315.31,
+      "payment_method": "UPI",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0079",
+      "timestamp": "2026-03-12T18:09:50.077606",
+      "amount": 2488.21,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0115",
+      "timestamp": "2026-03-05T18:09:50.077826",
+      "amount": 1958.42,
+      "payment_method": "Cash",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0097",
+      "timestamp": "2026-03-12T18:09:50.077717",
+      "amount": 1264.87,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0003",
+      "timestamp": "2026-03-14T18:09:50.076378",
+      "amount": 4802.04,
+      "payment_method": "UPI",
+      "customer_name": "Kiran",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0165",
+      "timestamp": "2026-03-08T18:09:50.078213",
+      "amount": 3169.49,
+      "payment_method": "Cash",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0042",
+      "timestamp": "2026-03-09T18:09:50.076739",
+      "amount": 4572.9,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0070",
+      "timestamp": "2026-03-06T18:09:50.077515",
+      "amount": 598.59,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0167",
+      "timestamp": "2026-03-04T18:09:50.078224",
+      "amount": 3379.28,
+      "payment_method": "UPI",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0002",
+      "timestamp": "2026-03-08T18:09:50.076359",
+      "amount": 888.47,
+      "payment_method": "Cash",
+      "customer_name": "Ravi",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0021",
+      "timestamp": "2026-02-19T18:09:50.076534",
+      "amount": 2531.58,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0075",
+      "timestamp": "2026-03-17T18:09:50.077579",
+      "amount": 2332.09,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0065",
+      "timestamp": "2026-03-13T18:09:50.077484",
+      "amount": 384.26,
+      "payment_method": "UPI",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0193",
+      "timestamp": "2026-03-13T18:09:50.078552",
+      "amount": 4108.51,
+      "payment_method": "Cash",
+      "customer_name": "Amit",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0046",
+      "timestamp": "2026-02-21T18:09:50.076771",
+      "amount": 4279.54,
+      "payment_method": "Wallet",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0157",
+      "timestamp": "2026-03-05T18:09:50.078149",
+      "amount": 803.58,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0126",
+      "timestamp": "2026-03-07T18:09:50.077903",
+      "amount": 4058.66,
+      "payment_method": "Cash",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0114",
+      "timestamp": "2026-02-19T18:09:50.077821",
+      "amount": 61.08,
+      "payment_method": "Wallet",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0008",
+      "timestamp": "2026-03-03T18:09:50.076426",
+      "amount": 3566.76,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0035",
+      "timestamp": "2026-02-28T18:09:50.076651",
+      "amount": 1939.64,
+      "payment_method": "Cash",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0183",
+      "timestamp": "2026-03-10T18:09:50.078451",
+      "amount": 2163.26,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0134",
+      "timestamp": "2026-02-19T18:09:50.077952",
+      "amount": 4210.21,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0095",
+      "timestamp": "2026-02-17T18:09:50.077707",
+      "amount": 4533.63,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0096",
+      "timestamp": "2026-02-25T18:09:50.077712",
+      "amount": 1715.16,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0068",
+      "timestamp": "2026-03-16T18:09:50.077502",
+      "amount": 3468.34,
+      "payment_method": "UPI",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0088",
+      "timestamp": "2026-02-22T18:09:50.077661",
+      "amount": 4225.67,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0135",
+      "timestamp": "2026-03-03T18:09:50.077957",
+      "amount": 1635.6,
+      "payment_method": "Wallet",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0197",
+      "timestamp": "2026-03-14T18:09:50.078587",
+      "amount": 3934.95,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0073",
+      "timestamp": "2026-02-18T18:09:50.077568",
+      "amount": 76.87,
+      "payment_method": "Wallet",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0129",
+      "timestamp": "2026-02-25T18:09:50.077923",
+      "amount": 3982.38,
+      "payment_method": "UPI",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0173",
+      "timestamp": "2026-02-27T18:09:50.078268",
+      "amount": 4048.03,
+      "payment_method": "UPI",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0105",
+      "timestamp": "2026-03-09T18:09:50.077761",
+      "amount": 1944.63,
+      "payment_method": "Wallet",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0071",
+      "timestamp": "2026-02-25T18:09:50.077549",
+      "amount": 2291.05,
+      "payment_method": "Wallet",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0016",
+      "timestamp": "2026-02-25T18:09:50.076494",
+      "amount": 2153.28,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0160",
+      "timestamp": "2026-02-18T18:09:50.078176",
+      "amount": 3225.42,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0077",
+      "timestamp": "2026-02-27T18:09:50.077589",
+      "amount": 311.4,
+      "payment_method": "Wallet",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0154",
+      "timestamp": "2026-03-15T18:09:50.078123",
+      "amount": 1913.58,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0084",
+      "timestamp": "2026-03-07T18:09:50.077637",
+      "amount": 1056.88,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0018",
+      "timestamp": "2026-03-08T18:09:50.076508",
+      "amount": 2947.44,
+      "payment_method": "Cash",
+      "customer_name": "Rahul",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0132",
+      "timestamp": "2026-03-04T18:09:50.077942",
+      "amount": 2481.37,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0169",
+      "timestamp": "2026-02-28T18:09:50.078244",
+      "amount": 473.52,
+      "payment_method": "Wallet",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0179",
+      "timestamp": "2026-03-18T18:09:50.078411",
+      "amount": 1490.74,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0007",
+      "timestamp": "2026-02-26T18:09:50.076418",
+      "amount": 4600.17,
+      "payment_method": "UPI",
+      "customer_name": "Kiran",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0031",
+      "timestamp": "2026-03-02T18:09:50.076615",
+      "amount": 2704.05,
+      "payment_method": "Cash",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0101",
+      "timestamp": "2026-03-16T18:09:50.077739",
+      "amount": 1698.57,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0138",
+      "timestamp": "2026-02-28T18:09:50.077975",
+      "amount": 2598.37,
+      "payment_method": "Cash",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0094",
+      "timestamp": "2026-02-24T18:09:50.077702",
+      "amount": 2486.16,
+      "payment_method": "UPI",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0100",
+      "timestamp": "2026-03-15T18:09:50.077733",
+      "amount": 4999.03,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0156",
+      "timestamp": "2026-02-21T18:09:50.078137",
+      "amount": 1977.01,
+      "payment_method": "Wallet",
+      "customer_name": "Kiran",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0191",
+      "timestamp": "2026-02-28T18:09:50.078536",
+      "amount": 2660.53,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0086",
+      "timestamp": "2026-02-21T18:09:50.077651",
+      "amount": 2638.92,
+      "payment_method": "Wallet",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0012",
+      "timestamp": "2026-03-02T18:09:50.076464",
+      "amount": 1666.54,
+      "payment_method": "Cash",
+      "customer_name": "Suresh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0069",
+      "timestamp": "2026-02-24T18:09:50.077507",
+      "amount": 458.99,
+      "payment_method": "UPI",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0032",
+      "timestamp": "2026-02-24T18:09:50.076624",
+      "amount": 4429.08,
+      "payment_method": "UPI",
+      "customer_name": "Vikram",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0081",
+      "timestamp": "2026-03-18T18:09:50.077617",
+      "amount": 3848.52,
+      "payment_method": "Cash",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0041",
+      "timestamp": "2026-02-24T18:09:50.076698",
+      "amount": 2878.86,
+      "payment_method": "UPI",
+      "customer_name": "Rahul",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0014",
+      "timestamp": "2026-03-07T18:09:50.076479",
+      "amount": 2738.5,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0040",
+      "timestamp": "2026-02-21T18:09:50.076691",
+      "amount": 2821.82,
+      "payment_method": "UPI",
+      "customer_name": "Ramesh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0150",
+      "timestamp": "2026-03-04T18:09:50.078058",
+      "amount": 2066.47,
+      "payment_method": "Wallet",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0090",
+      "timestamp": "2026-02-26T18:09:50.077674",
+      "amount": 4379.5,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0059",
+      "timestamp": "2026-03-05T18:09:50.077414",
+      "amount": 4812.47,
+      "payment_method": "Wallet",
+      "customer_name": "Ravi",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0125",
+      "timestamp": "2026-02-17T18:09:50.077879",
+      "amount": 1867.19,
+      "payment_method": "Wallet",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0017",
+      "timestamp": "2026-02-17T18:09:50.076501",
+      "amount": 2518.67,
+      "payment_method": "UPI",
+      "customer_name": "Amit",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0005",
+      "timestamp": "2026-03-14T18:09:50.076400",
+      "amount": 2981.39,
+      "payment_method": "Cash",
+      "customer_name": "Ramesh",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0057",
+      "timestamp": "2026-03-08T18:09:50.077398",
+      "amount": 4189.99,
+      "payment_method": "UPI",
+      "customer_name": "Anjali",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0037",
+      "timestamp": "2026-02-23T18:09:50.076666",
+      "amount": 4938.58,
+      "payment_method": "UPI",
+      "customer_name": "Priya",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0128",
+      "timestamp": "2026-03-04T18:09:50.077915",
+      "amount": 153.78,
+      "payment_method": "Wallet",
+      "customer_name": "Kiran",
+      "is_khata": true,
+      "is_paid": false
+    },
+    {
+      "transaction_id": "txn_0104",
+      "timestamp": "2026-03-14T18:09:50.077755",
+      "amount": 4515.57,
+      "payment_method": "UPI",
+      "customer_name": "Suresh",
+      "is_khata": false,
+      "is_paid": true
+    },
+    {
+      "transaction_id": "txn_0053",
+      "timestamp": "2026-03-03T18:09:50.076829",
+      "amount": 2711.1,
+      "payment_method": "UPI",
+      "customer_name": "Sneha",
+      "is_khata": false,
+      "is_paid": true
+    }
+  ]
+}
