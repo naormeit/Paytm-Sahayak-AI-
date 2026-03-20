@@ -7,6 +7,8 @@ from typing import List
 class DashboardSummaryResponse(BaseModel):
     top_debtors: List[str]
     credit_health_score: int
+    total_sales: float
+    pending_khata: float
     morning_briefing: str
 
 class SahayakAnalyst:
@@ -31,12 +33,16 @@ class SahayakAnalyst:
         Analyze this data and return:
         1. The top 3 debtors (customers with the highest total unpaid Khata amount). The format must be precise with 2 decimal places: 'Name: ₹Amount'.
         2. A Credit Health Score (0-100), where 100 means no pending debts, and heavily penalize large overdue amounts.
-        3. A "Morning Briefing", e.g. "Good morning! You have ₹4,200.00 pending in Khata. 3 customers are overdue." Ensure everything is dynamically calculated from the provided data.
+        3. Total Sales amount (sum of all 'success' transactions).
+        4. Pending Khata amount (sum of all 'pending' transactions).
+        5. A "Morning Briefing", e.g. "Good morning! You have ₹4,200.00 pending in Khata. 3 customers are overdue." Ensure everything is dynamically calculated from the provided data.
         
         Output strictly as JSON matching this schema:
         {{
             "top_debtors": ["Name1: ₹100.00", "Name2: ₹50.00"],
             "credit_health_score": 85,
+            "total_sales": 50000.00,
+            "pending_khata": 4200.00,
             "morning_briefing": "..."
         }}
         """

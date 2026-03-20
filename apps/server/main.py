@@ -52,3 +52,14 @@ def get_dashboard_summary():
         return {"error": "Mock data not generated. Please run mock_generator.py first."}
     except Exception as e:
         return {"error": str(e)}
+
+@app.post("/api/v1/scan-bill")
+def scan_bill():
+    # Mock OCR response
+    import time
+    time.sleep(2)  # Simulate processing
+    return {
+        "customer_name": "Ramesh Kumar",
+        "amount": 450.00,
+        "items": ["Milk 2L", "Bread", "Eggs 1dz"]
+    }
