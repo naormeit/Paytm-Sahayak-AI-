@@ -1,9 +1,13 @@
 import sys
 import os
+import json
+import uuid
 
 # Ensure the packages directory is in sys.path dynamically so no venv installation is strictly required
 try:
     from ai_engine.credit_analysis import SahayakAnalyst
+    from ai_engine.voice_handler import VoiceHandler
+    from ai_engine.vision_handler import SahayakVision
 except ImportError:
     # Append the root of the monorepo to the path
     current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -11,6 +15,8 @@ except ImportError:
     packages_dir = os.path.join(root_dir, 'packages', 'ai-engine')
     sys.path.append(packages_dir)
     from ai_engine.credit_analysis import SahayakAnalyst
+    from ai_engine.voice_handler import VoiceHandler
+    from ai_engine.vision_handler import SahayakVision
 
 from fastapi import FastAPI
 from pydantic import BaseModel, Field
@@ -31,6 +37,12 @@ class MerchantData(BaseModel):
     category: str
     transactions: List[Transaction] = []
     credit_score: Optional[int] = None
+
+class VoiceQuery(BaseModel):
+    text: str
+
+class ScanBillRequest(BaseModel):
+    image_base64: str
 
 app = FastAPI(title="Sahayak AI API", version="1.0.0")
 
@@ -53,13 +65,52 @@ def get_dashboard_summary():
     except Exception as e:
         return {"error": str(e)}
 
+@app.post("/api/v1/voice-query")
+def process_voice_query(query: VoiceQuery):
+    handler = VoiceHandler(data_path="merchant_data.json")
+    try:
+        return handler.process_voice_query(query.text)
+    except FileNotFoundError:
+        return {"error": "Mock data not found. Please run mock_generator.py first."}
+    except Exception as e:
+        return {"error": str(e)}
+
 @app.post("/api/v1/scan-bill")
-def scan_bill():
-    # Mock OCR response
-    import time
-    time.sleep(2)  # Simulate processing
-    return {
-        "customer_name": "Ramesh Kumar",
-        "amount": 450.00,
-        "items": ["Milk 2L", "Bread", "Eggs 1dz"]
-    }
+def scan_bill(request: ScanBillRequest):
+    vision = SahayakVision()
+    try:
+        extraction = vision.process_receipt(request.image_base64)
+        
+        # Append to merchant_data.json
+        data_path = "merchant_data.json"
+        
+        if os.path.exists(data_path):
+            with open(data_path, 'r') as f:
+                data = json.load(f)
+        else:
+            data = {"transactions": []}
+            
+        new_txn = {
+            "transaction_id": f"txn_vision_{uuid.uuid4().hex[:8]}",
+            "timestamp": datetime.now().isoformat(),
+            "amount": round(float(extraction.get("total_amount", 0.0)), 2),
+            "payment_method": "Cash",
+            "customer_name": extraction.get("customer_name", "Unknown"),
+            "is_khata": True,
+            "is_paid": False,
+            "items": extraction.get("items", [])
+        }
+        
+        data.setdefault("transactions", []).append(new_txn)
+        
+        with open(data_path, 'w') as f:
+            json.dump(data, f, indent=2)
+            
+        return {
+            "status": "success",
+            "message": "Bill scanned and added to Khata successfully.",
+            "extracted_data": extraction,
+            "transaction": new_txn
+        }
+    except Exception as e:
+        return {"error": str(e)}
