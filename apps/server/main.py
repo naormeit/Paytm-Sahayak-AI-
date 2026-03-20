@@ -44,7 +44,17 @@ class VoiceQuery(BaseModel):
 class ScanBillRequest(BaseModel):
     image_base64: str
 
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI(title="Sahayak AI API", version="1.0.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def read_root():
