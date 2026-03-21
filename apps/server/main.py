@@ -50,7 +50,7 @@ app = FastAPI(title="Sahayak AI API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000", "*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -70,10 +70,14 @@ def get_dashboard_summary():
     try:
         summary = analyst.analyze()
         return summary
-    except FileNotFoundError:
-        return {"error": "Mock data not generated. Please run mock_generator.py first."}
     except Exception as e:
-        return {"error": str(e)}
+        # Fallback to mock data to prevent frontend crashes if DB is missing or API fails
+        print(f"Error running Agentic logic: {str(e)}")
+        return {
+            "top_debtors": ["Rahul (Mock): ₹1500.00", "Priya (Mock): ₹850.00", "Amit (Mock): ₹320.00"],
+            "credit_health_score": 75,
+            "morning_briefing": "Offline Mode: Unable to reach the database or Gemini AI Engine. displaying sample datastream. Rahul and Priya owe you roughly ₹2,350.00."
+        }
 
 @app.post("/api/v1/voice-query")
 def process_voice_query(query: VoiceQuery):
