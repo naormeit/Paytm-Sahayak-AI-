@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { Mic, Camera, TrendingUp, AlertCircle, Wallet, Users, ArrowUpRight, ShoppingBag, Receipt } from "lucide-react";
 
 interface DashboardSummary {
@@ -22,9 +23,14 @@ const MOCK_DATA: DashboardSummary = {
   active_debtors_count: 8,
 };
 
-export default function SahayakDashboard() {
+function SahayakDashboard() {
   const [data, setData] = useState<DashboardSummary | null>(null);
   const [loading, setLoading] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
     const fetchDashboard = async () => {
@@ -51,6 +57,8 @@ export default function SahayakDashboard() {
     };
     fetchDashboard();
   }, []);
+
+  if (!mounted) return <div className="bg-[#f8f9fa] min-h-screen" />;
 
   return (
     <div className="min-h-screen bg-[#f8f9fa] text-gray-900 font-sans p-6">
@@ -190,3 +198,5 @@ export default function SahayakDashboard() {
     </div>
   );
 }
+
+export default dynamic(() => Promise.resolve(SahayakDashboard), { ssr: false });
