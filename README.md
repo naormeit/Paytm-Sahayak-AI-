@@ -20,20 +20,39 @@ India's MSME sector faces a staggering **₹25 Trillion credit gap**. Millions o
 
 ---
 
+## 🏗️ System Architecture
+
+Sahayak AI is engineered as a highly modular, decoupled Monorepo structure mapped directly via REST interactions:
+
+```mermaid
+graph TD
+    classDef paytm fill:#00BAF2,stroke:#002970,stroke-width:2px,color:#fff;
+    classDef backend fill:#1f2937,stroke:#374151,stroke-width:2px,color:#fff;
+
+    U((Shop Owner)) -->|Upload Image / Voice Query| Client
+    Client[Next.js Frontend\nPort 3000]:::paytm -->|REST JSON Payload| Server(FastAPI Backend\nPort 8000):::backend
+    
+    subgraph Core Package: ai-engine
+        Server -->|Intelligent Analysis| Analyst[SahayakAnalyst Module]
+    end
+    
+    Analyst -->|Base64 & Text Prompt| Gemini{Gemini 1.5 Flash\nLLM Node}:::paytm
+    
+    Gemini -->|Structured Pydantic JSON| Server
+    Server <-->|Read / Append entry| DB[(merchant_data.json\nLocal Ledger)]
+```
+
+- **`apps/web`**: A bleeding-edge **Next.js 15** frontend rendering animated UI dashboards via smooth Tailwind styling.
+- **`apps/server`**: The **FastAPI** backend routing core running the REST servers and rigorous Pydantic schema logic.
+- **`packages/ai-engine`**: Our cleanly abstracted Python intelligence layer natively orchestrating `google-genai` LLM models.
+
+---
+
 ## ✨ Feature Showcase
 
 - **📸 Vision-to-Ledger**: Simply snap a photo of any handwritten receipt. Our multi-modal Gemini 1.5 Flash integration instantly extracts the customer name, itemized lists, and total amount—logging it as a structured digital Khata entry securely.
 - **🤖 Agentic Briefing**: Wake up to a dynamic "Morning Briefing." The AI analyzes your active ledgers to summarize outstanding debts, total sales, and prioritize which customers need targeted WhatsApp payment reminders.
 - **📈 Dynamic Credit Scoring**: Stop guessing who to lend to. Sahayak AI synthetically calculates real-time creditworthiness (0-100) for local customers based strictly on their historical repayment velocity.
-
----
-
-## 🏗️ System Architecture
-
-Sahayak AI is engineered as a highly modular, decoupled Monorepo:
-- **`apps/web`**: A bleeding-edge **Next.js 15** frontend. Client-side rendered dashboards featuring animated SVG visualizations, smooth Tailwind CSS styling, and strict crash-preventing error boundaries.
-- **`apps/server`**: The **FastAPI** backend routing core. It manages the REST interfaces (`/scan-bill`, `/dashboard-summary`, `/chat`) and strictly enforces Pydantic schema validation.
-- **`packages/ai-engine`**: Our isolated Python package containing the pure intelligence layer. This cleanly abstracts the `google-genai` configurations, Voice Intent mapping, and Vision OCR processing away from the routing logic.
 
 ---
 
@@ -46,7 +65,7 @@ Run the full stack locally in 3 simple steps:
 cd apps/server
 pip install -r requirements.txt
 
-# Export your actual Gemini Key!
+# Export your pristine Gemini Key!
 export GEMINI_API_KEY="your-gemini-key-here"  
 # (Use $env:GEMINI_API_KEY="..." on Windows PowerShell)
 
@@ -62,7 +81,7 @@ npm run dev
 ```
 
 ### 3. Open the Dashboard!
-Visit **[http://localhost:3000](http://localhost:3000)** in your browser to experience the Sahayak AI dashboard. The API server runs autonomously on port `8000` handling all AI bridging.
+Visit **[http://localhost:3000](http://localhost:3000)** in your browser to experience the Sahayak AI dashboard. The API server runs autonomously on port `8000` executing all Gen-AI operations.
 
 ---
 
