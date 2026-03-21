@@ -117,9 +117,9 @@ function SahayakDashboard() {
       });
       const json = await res.json();
       setChatResponse(json.spoken_summary || "Processed your request successfully.");
-    } catch (err) {
-      console.error(err);
-      setChatResponse("Failed to reach Sahayak AI Server. Are you offline?");
+    } catch (err: any) {
+      console.error("Ask Sahayak Fetch Error:", err);
+      setChatResponse(`Failed to reach Sahayak AI Server. Error: ${err.message || 'Network disconnected.'}`);
     } finally {
       setIsChatting(false);
       setChatQuery('');
