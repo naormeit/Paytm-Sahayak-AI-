@@ -88,6 +88,6 @@ Visit **[http://localhost:3000](http://localhost:3000)** in your browser to expe
 ## 👨‍💻 Author
 
 Created with ❤️ by **Naorem Ngathoiba Singh**
-- 💼 LinkedIn: [Connect on LinkedIn](https://linkedin.com/in/) *(Add your link here!)*
-- 🌐 Portfolio: [naormeit.dev](https://github.com/naormeit) *(Add your link here!)*
+- 💼 LinkedIn: [Connect on LinkedIn](https://linkedin.com/in/naoremnganthoiba)
+- 🌐 Portfolio: [naormeit.dev](https://github.com/naormeit)
 - 🐙 GitHub: [@naormeit](https://github.com/naormeit)
