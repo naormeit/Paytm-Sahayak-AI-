@@ -89,6 +89,11 @@ def process_voice_query(query: VoiceQuery):
     except Exception as e:
         return {"error": str(e)}
 
+@app.post("/api/v1/chat")
+def process_chat_query(query: VoiceQuery):
+    # Route chat text through the same intelligent intent maps
+    return process_voice_query(query)
+
 @app.post("/api/v1/scan-bill")
 def scan_bill(request: ScanBillRequest):
     vision = SahayakVision()

@@ -1,14 +1,13 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import dynamic from "next/dynamic";
-import { Mic, Camera, TrendingUp, AlertCircle, Wallet, Users, ArrowUpRight, ShoppingBag, Receipt } from "lucide-react";
+import { Mic, Camera, TrendingUp, AlertCircle, Wallet, Users, ArrowUpRight, ShoppingBag, Receipt, Send } from "lucide-react";
 
 interface DashboardSummary {
   top_debtors: string[];
   credit_health_score: number;
   morning_briefing: string;
-  // New fields for StatsGrid (added as optional to maintain compatibility with backend for now)
   total_sales?: string;
   outstanding_udhaar?: string;
   active_debtors_count?: number;
@@ -24,46 +23,127 @@ const MOCK_DATA: DashboardSummary = {
 };
 
 function SahayakDashboard() {
-  const [data, setData] = useState<DashboardSummary | null>(null);
+  const [data, setData] = useState<DashboardSummary>(MOCK_DATA);
   const [loading, setLoading] = useState(true);
   const [mounted, setMounted] = useState(false);
+
+  // Vision State
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const [isScanning, setIsScanning] = useState(false);
+
+  // Chat State
+  const [chatQuery, setChatQuery] = useState('');
+  const [isChatting, setIsChatting] = useState(false);
+  const [chatResponse, setChatResponse] = useState<string | null>(null);
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
-  useEffect(() => {
-    const fetchDashboard = async () => {
-      try {
-        const res = await fetch("http://127.0.0.1:8000/api/v1/dashboard-summary");
-        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
-        const json = await res.json();
-        if (json.error) throw new Error(json.error);
-        
-        // Ensure mock fields are present if backend doesn't provide them
-        const enrichedData = {
-            ...MOCK_DATA, // Use mock as base
-            ...json,      // Override with real data
-        };
-        setData(enrichedData);
-        console.log("UI Rendered with:", enrichedData);
-      } catch (err: any) {
-        console.error("Fetch failed, using mock data:", err);
-        setData(MOCK_DATA);
-        console.log("UI Rendered with:", MOCK_DATA);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchDashboard();
+  const fetchDashboard = useCallback(async () => {
+    try {
+      const res = await fetch("http://127.0.0.1:8000/api/v1/dashboard-summary");
+      if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+      const json = await res.json();
+      if (json.error) throw new Error(json.error);
+      
+      const enrichedData = { ...MOCK_DATA, ...json };
+      setData(enrichedData);
+    } catch (err: any) {
+      console.error("Fetch failed, preserving MOCK_DATA UI:", err);
+    } finally {
+      setLoading(false);
+    }
   }, []);
+
+  useEffect(() => {
+    const fallbackTimeout = setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+    fetchDashboard();
+    return () => clearTimeout(fallbackTimeout);
+  }, [fetchDashboard]);
+
+  // Handle Image Upload -> Base64 -> FastAPI
+  const uploadBill = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+
+    setIsScanning(true);
+    try {
+      const base64String = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result as string);
+        reader.onerror = error => reject(error);
+      });
+
+      const res = await fetch("http://127.0.0.1:8000/api/v1/scan-bill", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ image_base64: base64String })
+      });
+
+      if (!res.ok) throw new Error("Backend Vision processing failed.");
+      
+      // Auto-refresh Dashboard after inserting Khata entry
+      await fetchDashboard();
+      
+      setChatResponse("📸 Bill Scanned! Khata updated successfully with newly extracted details.");
+      setTimeout(() => setChatResponse(null), 6000);
+
+    } catch (err: any) {
+      console.error(err);
+      setChatResponse("Failed to scan bill natively. Ensure Gemini API key is active. " + err.message);
+      setTimeout(() => setChatResponse(null), 6000);
+    } finally {
+      setIsScanning(false);
+      if (e.target) e.target.value = '';
+    }
+  };
+
+  // Handle Intent Chat Routing -> FastAPI
+  const askSahayak = async (e?: React.FormEvent) => {
+    if (e) e.preventDefault();
+    if (!chatQuery.trim()) return;
+    
+    setIsChatting(true);
+    setChatResponse(null);
+    try {
+      const res = await fetch("http://127.0.0.1:8000/api/v1/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: chatQuery })
+      });
+      const json = await res.json();
+      setChatResponse(json.spoken_summary || "Processed your request successfully.");
+    } catch (err) {
+      console.error(err);
+      setChatResponse("Failed to reach Sahayak AI Server. Are you offline?");
+    } finally {
+      setIsChatting(false);
+      setChatQuery('');
+    }
+  };
 
   if (!mounted) return <div className="bg-[#f8f9fa] min-h-screen" />;
 
   return (
-    <div className="min-h-screen bg-[#f8f9fa] text-gray-900 font-sans p-6">
-      <header className="max-w-5xl mx-auto flex justify-between items-center mb-8">
-        <div className="flex items-center gap-3">
+    <div className="min-h-screen bg-[#f8f9fa] text-gray-900 font-sans p-6 pb-24 relative">
+      
+      {/* Toast Notification Layer */}
+      {chatResponse && (
+        <div className="fixed top-24 right-6 bg-gray-900 text-white p-5 rounded-2xl shadow-2xl max-w-sm border border-gray-700 z-50 animate-bounce">
+           <div className="flex justify-between items-start mb-3">
+             <span className="font-bold flex items-center gap-2 text-[#00BAF2]"><Mic size={16}/> Sahayak Output</span>
+             <button onClick={() => setChatResponse(null)} className="opacity-50 hover:opacity-100 transition text-lg">&times;</button>
+           </div>
+           <p className="text-sm leading-relaxed">{chatResponse}</p>
+        </div>
+      )}
+
+      <header className="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center mb-8 gap-4">
+        <div className="flex items-center gap-3 w-full md:w-auto">
           <div className="bg-[#00BAF2] text-white p-2 rounded-xl">
             <Wallet size={28} />
           </div>
@@ -72,14 +152,34 @@ function SahayakDashboard() {
             <p className="text-sm text-gray-500 font-medium">Agentic Khata Management</p>
           </div>
         </div>
-        <div className="flex gap-4">
-          <button className="flex items-center gap-2 bg-white border border-gray-200 shadow-sm px-4 py-2 rounded-full text-sm font-medium hover:bg-gray-50 transition text-[#00BAF2]">
-            <Mic size={18} />
-            Ask Sahayak
-          </button>
-          <button className="flex items-center gap-2 bg-[#00BAF2] text-white shadow-md hover:shadow-lg px-4 py-2 rounded-full text-sm font-medium hover:bg-[#0096c7] transition">
-            <Camera size={18} />
-            Scan Bill
+        
+        <div className="flex gap-4 items-center w-full md:w-auto">
+          <form onSubmit={askSahayak} className="flex relative w-full md:w-64">
+             <input 
+               type="text" 
+               value={chatQuery} 
+               onChange={e => setChatQuery(e.target.value)} 
+               placeholder="Chat with Sahayak..." 
+               className="w-full text-sm pl-4 pr-10 py-2.5 rounded-full border border-gray-200 outline-none focus:border-[#00BAF2]" 
+               disabled={isChatting}
+             />
+             <button 
+               type="submit" 
+               disabled={isChatting} 
+               className="absolute right-2 top-1.5 p-1 rounded-full text-[#00BAF2] hover:bg-blue-50 transition disabled:opacity-50"
+             >
+               {isChatting ? <span className="animate-spin text-lg">⏳</span> : <Send size={16} />}
+             </button>
+          </form>
+          
+          <input type="file" accept="image/*" ref={fileInputRef} className="hidden" onChange={uploadBill} />
+          <button 
+            onClick={() => fileInputRef.current?.click()} 
+            disabled={isScanning} 
+            className="whitespace-nowrap flex items-center gap-2 bg-[#00BAF2] text-white shadow-md hover:shadow-lg px-5 py-2.5 rounded-full text-sm font-bold hover:bg-[#0096c7] transition disabled:opacity-75"
+          >
+            {isScanning ? <span className="animate-spin text-lg">⏳</span> : <Camera size={18} />}
+            {isScanning ? "Processing Bill..." : "Scan Bill"}
           </button>
         </div>
       </header>
@@ -92,7 +192,6 @@ function SahayakDashboard() {
           </div>
         ) : data ? (
           <div className="space-y-6">
-            {/* Morning Briefing Banner */}
             <div className="bg-gradient-to-r from-[#00BAF2] to-[#008cc9] text-white p-8 rounded-2xl shadow-lg flex items-center gap-6 relative overflow-hidden">
                <div className="absolute top-0 right-0 opacity-10 transform translate-x-12 -translate-y-12">
                   <TrendingUp size={200} />
@@ -106,7 +205,6 @@ function SahayakDashboard() {
                </div>
             </div>
 
-            {/* StatsGrid: 4 Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               <div className="bg-white border border-gray-100 p-6 rounded-2xl shadow-sm hover:shadow-md transition">
                 <div className="bg-blue-50 text-[#00BAF2] w-10 h-10 rounded-lg flex items-center justify-center mb-4">
@@ -142,7 +240,6 @@ function SahayakDashboard() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Top Debtors Section */}
               <div className="col-span-1 md:col-span-2 bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
                 <div className="flex justify-between items-center mb-6">
                   <h3 className="text-lg font-bold flex items-center gap-2 text-gray-800">
@@ -174,7 +271,6 @@ function SahayakDashboard() {
                 </div>
               </div>
 
-              {/* Credit Health Score Visualization */}
               <div className="col-span-1 bg-white border border-gray-100 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col items-center justify-center text-center">
                  <h3 className="text-xl font-bold mb-6 text-gray-800 tracking-tight">Credit Health</h3>
                  <div className="relative w-40 h-40 flex items-center justify-center">
