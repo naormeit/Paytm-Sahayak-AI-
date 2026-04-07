@@ -2,6 +2,11 @@ import sys
 import os
 import json
 import uuid
+from dotenv import load_dotenv
+
+# Load local environment variables natively into os.environ
+load_dotenv()
+print("API Key Loaded: ", "Yes" if os.environ.get("GEMINI_API_KEY") else "No")
 
 # Ensure the packages directory is in sys.path dynamically so no venv installation is strictly required
 try:
